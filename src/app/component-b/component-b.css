@@ -1,0 +1,11 @@
+.developer {
+  color: blue;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.tester {
+  color: orange;
+  background-color: lightyellow;
+  padding: 10px;
+}

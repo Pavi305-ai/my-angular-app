@@ -1,0 +1,8 @@
+
+<h2>ngstyle works!</h2>
+<p [ngStyle]="{'color':isActive ? 'green': 'red','background-color':isActive ? 'lightgreen': 'pink'}">
+    Employee: {{employeeName}}
+</p>
+<p>Status: {{isActive ? 'Active' : 'Inactive'}}</p>
+<button (click)="changeStatus()">Change Status</button>
+

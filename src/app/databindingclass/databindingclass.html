@@ -1,0 +1,9 @@
+<h2>Login Status</h2>
+
+<p [class.login]="loggedIn">
+  {{ loggedIn ? 'You are Logged In' : 'You are Logged Out' }}
+</p>
+
+<button (click)="changeLogin()">
+  Login / Logout
+</button>

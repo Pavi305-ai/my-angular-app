@@ -1,0 +1,9 @@
+<h2>Employee Role</h2>
+
+<p [ngClass]="role === 'Developer' ? 'developer' : 'tester'">
+  Role: {{ role }}
+</p>
+
+<button (click)="changeRole()">
+  Change Role
+</button>

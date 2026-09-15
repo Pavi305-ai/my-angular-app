@@ -1,0 +1,9 @@
+<h2>Product Details</h2>
+
+<p [style.color]="available ? 'green' : 'red'">
+  {{ available ? 'Product Available' : 'Product Out of Stock' }}
+</p>
+
+<button (click)="changeAvailability()">
+  Change Availability
+</button>
