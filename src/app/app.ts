@@ -4,9 +4,26 @@ import { NgstyleComponenta } from './ngstyle-componenta/ngstyle-componenta';
 import { ComponentB } from './component-b/component-b';
 import { Databindingstyle } from './databindingstyle/databindingstyle';
 import { Databindingclass } from './databindingclass/databindingclass';
+import { Child } from './child/child';
+import { Parent } from './parent/parent';
+
+import { Contentp } from './contentp/contentp';
+import { Contentc } from './contentc/contentc';
+import { Contentpa } from './contentpa/contentpa';
+import { Componentpar } from './componentpar/componentpar';
+import { Container } from './container/container';
+import { Activestatus } from './activestatus/activestatus';
+import { Userlogin } from './userlogin/userlogin';
+import { Tempref } from './tempref/tempref';
+import { Viedynamic } from './viedynamic/viedynamic';
+
+import { Intorp } from './intorp/intorp';
+import { Innalp } from './innalp/innalp';
+
+
 
 @Component({
-  imports: [Databindingclass],
+  imports: [Innalp],
   
   selector: 'app-root',
   styleUrl: './app.css',
