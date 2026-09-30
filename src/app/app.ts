@@ -19,11 +19,18 @@ import { Viedynamic } from './viedynamic/viedynamic';
 
 import { Intorp } from './intorp/intorp';
 import { Innalp } from './innalp/innalp';
+import { Outor } from './outor/outor';
+import { Outorp } from './outorp/outorp';
+import { Outnalp } from './outnalp/outnalp';
+import { Eemtp } from './eemtp/eemtp';
+import { TwbIOtors } from './twb-iotors/twb-iotors';
+import { TwbIOtorsp } from './twb-iotorsp/twb-iotorsp';
+import { TwbmonalP } from './twbmonal-p/twbmonal-p';
 
 
 
 @Component({
-  imports: [Innalp],
+  imports: [TwbmonalP],
   
   selector: 'app-root',
   styleUrl: './app.css',

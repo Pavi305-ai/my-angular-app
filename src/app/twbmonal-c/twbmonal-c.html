@@ -1,0 +1,3 @@
+<h2>Child Component</h2>
+<input [value]="name()" (input)="name.set(($any($event.target)).value)">
+<p>Child Name:{{name()}}</p>
