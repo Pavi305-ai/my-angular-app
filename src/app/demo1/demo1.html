@@ -1,0 +1,46 @@
+<h1>Employee Registration</h1>
+<!-- Input Textbox -->
+ <h3>Employee Name</h3>
+ <input type = "text" placeholder="Enter employee name"(keyup)="getEmployeeName($event)">
+ <p>Employee Name:{{employeeName}}</p>
+
+ <hr>
+
+ <!-- DropDown -->
+
+ <h3>Department</h3>
+<select (change)="selectDepartment($event)">
+    <option value="">Select Department</option>
+    <option value="Java">Java</option>
+    <option value="Python">Python</option>
+    <option value="Angular">Angular</option>
+    <option value="Testing">Testing</option>
+</select>
+
+<p>Department:{{selectedDepartment}}</p>
+
+<hr>
+
+<!-- CheckBox -->
+
+
+<h3>Employee Status</h3>
+<label>
+    <input type="checkbox"(change)="changeStatus($event)">
+    Active Emplioyee
+</label>
+<p>Status:{{ isActive ? 'Active' : 'Inactive'}}</p>
+
+<hr>
+
+<!-- Property Binding -->
+ <h3>Property Binding</h3>
+ <input type="text"[value]="employeeName"(input)="employeeName=$any($event.target).value">
+ <p>Property value : {{employeeName}}</p>
+
+ <hr>
+
+<!-- Event Binding -->
+ <h3>Event Binding</h3>
+ <button (click)="submitForm()">Submit</button>
+ <p>{{message}}</p>

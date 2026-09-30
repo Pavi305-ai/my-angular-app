@@ -26,11 +26,20 @@ import { Eemtp } from './eemtp/eemtp';
 import { TwbIOtors } from './twb-iotors/twb-iotors';
 import { TwbIOtorsp } from './twb-iotorsp/twb-iotorsp';
 import { TwbmonalP } from './twbmonal-p/twbmonal-p';
+import { EmployeeeService } from './employeee';
+import { ITPB } from './itpb/itpb';
+import { EBC } from './ebc/ebc';
+import { InTKUP } from './in-tkup/in-tkup';
+import { Dc } from './dc/dc';
+import { CC } from './cc/cc';
+import { PBV } from './pbv/pbv';
+import { PBEB } from './pbeb/pbeb';
+import { Demo1 } from './demo1/demo1';
 
 
 
 @Component({
-  imports: [TwbmonalP],
+  imports: [Demo1],
   
   selector: 'app-root',
   styleUrl: './app.css',
@@ -62,10 +71,15 @@ export class App {
 
 //Event binding
 
- message = "Button click ";
- showMessage(){
-  this.message = "Button Successfully clicked!";
- }
+//  message = "Button click ";
+//  showMessage(){
+//   this.message = "Button Successfully clicked!";
+// }
+// employees: any[] = [];
+// constructor(private employeeService:EmployeeeService){
+//   this.employees=this.employeeService.getEmployees();
+
+//}
 }
 
 
