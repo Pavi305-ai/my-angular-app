@@ -1,5 +1,13 @@
 <h1>Employee Registration</h1>
-<!-- Input Textbox -->
+
+<!-- Property Binding -->
+ <h3>Property Binding</h3>
+ <input type="text"[value]="employeeName"(input)="employeeName=$any($event.target).value">
+ <p>Property value : {{employeeName}}</p>
+
+ <hr>
+<!--  Keyup Textbox -->
+
  <h3>Employee Name</h3>
  <input type = "text" placeholder="Enter employee name"(keyup)="getEmployeeName($event)">
  <p>Employee Name:{{employeeName}}</p>
@@ -33,14 +41,24 @@
 
 <hr>
 
-<!-- Property Binding -->
- <h3>Property Binding</h3>
- <input type="text"[value]="employeeName"(input)="employeeName=$any($event.target).value">
- <p>Property value : {{employeeName}}</p>
 
- <hr>
 
 <!-- Event Binding -->
  <h3>Event Binding</h3>
  <button (click)="submitForm()">Submit</button>
  <p>{{message}}</p>
+
+
+ <hr>
+
+
+
+ <h2>Student: {{ student.name }}</h2>
+
+<input [value]="student.name">
+
+<p>Age: {{ student.age }}</p>
+
+<button (click)="increaseAge()">
+  Increase Age
+</button>

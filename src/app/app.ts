@@ -35,14 +35,18 @@ import { CC } from './cc/cc';
 import { PBV } from './pbv/pbv';
 import { PBEB } from './pbeb/pbeb';
 import { Demo1 } from './demo1/demo1';
+import { StudentService } from './student';
+import { SenderComponent } from './sender/sender';
+import { ReceiverComponent } from './receiver/receiver';
 
 
 
 @Component({
-  imports: [Demo1],
+  imports: [SenderComponent,ReceiverComponent],
   
   selector: 'app-root',
   styleUrl: './app.css',
+  standalone : true,
   templateUrl: './app.html',
 })
 export class App {
@@ -78,10 +82,14 @@ export class App {
 // employees: any[] = [];
 // constructor(private employeeService:EmployeeeService){
 //   this.employees=this.employeeService.getEmployees();
+//  
+// constructor(private messageService: MessageService) {}
 
+//   sendMessage() {
+
+//     this.messageService.sendMessage("Hello from Pavithra");
 //}
 }
-
 
 
 

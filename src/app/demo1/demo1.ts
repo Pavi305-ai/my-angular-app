@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './demo1.html',
 })
 export class Demo1 {
-  employeeName = '';
+  employeeName = 'Pavithra';
   selectedDepartment = '';
   isActive = false;
   message = '';
-
   //Keyup Event
   getEmployeeName(event:Event){
     const input = event.target as HTMLInputElement;
@@ -32,4 +31,17 @@ export class Demo1 {
   submitForm(){
     this.message = 'Employee registered successfully';
   }
+
+
+
+  student = {
+    name: "Pavithra",
+    age: 22
+  };
+
+  increaseAge() {
+    this.student.age++;
+  }
+
 }
+
